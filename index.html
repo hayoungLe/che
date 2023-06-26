@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>쉐보레</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="command.js" defer></script>
+  <script src="jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <section class="side-bar">
+    <div class="header-nav-2st-fixed">
+      <div>
+        <a href="#">
+          <img src="견적-채팅 1.svg" alt="" />
+        </a>
+      </div>
+      <div class="side-bar-hover">
+        <p>온라인 견적 상담</p>
+      </div>
+    </div>
+    <div class="top-btn" style="cursor: pointer" onclick="window.scrollTo(0,0);">
+      <img src="topbtn.svg" alt="" />
+    </div>
+  </section>
+
+  <header>
+    <ul>
+      <li class="shearch-bar">
+        <div class="shearch-box">
+          <form action="#" method="post">
+            <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요." />
+          </form>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="검색.png" alt="검색" />
+            </a>
+          </li>
+          <li class="shearch-x-button">
+            <a href="#">
+              <img src="x-button.svg" alt="x" class="x-button" />
+              <img src="x-button copy.svg" alt="x-2" class="x-button-copy" />
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="mini-nav">
+        <a href="#"><span>전시장 찾기</span></a>
+        <a href="#"><span>고객센터</span></a>
+        <a href="#"><span>마이 쉐보레</span></a>
+      </li>
+      <li class="top-logo">
+        <a href="#">
+          <img src="쉐보레로고.svg" alt="logo" />
+        </a>
+      </li>
+      <li class="top-center">
+        <ul>
+          <li>
+            <span>차량</span>
+            <!-- 2차메뉴팝업 -->
+            <div class="menu-2nd-con">
+              <div class="menu-1rd">
+                <ul>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">SEDAN</a>
+                    <ul class="car-img-list">
+                      <li>
+                        <div class="img-box">
+                          <img src="차량누끼1 1.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>THE NEW 스파크</p>
+                          <p>시작 가격 ₩9,770,000 ~</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-box">
+                          <img src="차량누끼2 1.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>THE NEW 스파크</p>
+                          <p>시작 가격 ₩9,770,000 ~</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">SUV</a>
+                    <ul class="car-img-list">
+                      <li>
+                        <div class="img-box">
+                          <img src="SUV1.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>이쿼녹스</p>
+                          <p>시작 가격 ₩31,040,000 ~</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-box">
+                          <img src="SUV2.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>트레일블레이저</p>
+                          <p>시작 가격 ₩25,710,000 ~</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-box">
+                          <img src="SUV3.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>트래버스</p>
+                          <p>시작 가격 ₩55,670,000 ~</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">CUV</a>
+                    <ul class="car-img-list">
+                      <li>
+                        <div class="img-box">
+                          <img src="CUVCAR.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>트랙스 크로스 오버</p>
+                          <p>시작 가격 ₩20,520,000 ~</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Truck</a>
+                    <ul class="car-img-list">
+                      <li>
+                        <div class="img-box">
+                          <img src="TRUCK.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>REAL NEW 콜로라도</p>
+                          <p>시작 가격 ₩40,500,000 ~</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">EV</a>
+                    <ul class="car-img-list">
+                      <li>
+                        <div class="img-box">
+                          <img src="EV1.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>BOLT EUV</p>
+                          <p>시작 가격 ₩47,900,000 ~</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-box">
+                          <img src="EV2.png" alt="차량누끼1 1.png" />
+                        </div>
+                        <div class="text-box">
+                          <p>BOLT EV</p>
+                          <p>시작 가격 ₩44,300,000 ~</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-2rd">
+                <!-- <ul>
+                    <li>
+                      <div class="img-box">
+                        <img src="차량누끼1 1.png" alt="차량누끼1 1.png" />
+                      </div>
+                      <div class="text-box">
+                        <p>THE NEW 스파크</p>
+                        <p>시작 가격 ₩9,770,000 ~</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="img-box">
+                        <img src="차량누끼2 1.png" alt="차량누끼1 1.png" />
+                      </div>
+                      <div class="text-box">
+                        <p>THE NEW 스파크</p>
+                        <p>시작 가격 ₩9,770,000 ~</p>
+                      </div>
+                    </li>
+                  </ul> -->
+              </div>
+              <div class="menu-3rd">
+                <ul>
+                  <li class="menu-3rd-2">
+                    <div class="btn-list">
+                      <ul>
+                        <li><a href="#">온라인샵</a></li>
+                        <li><a href="#">온라인 견적</a></li>
+                        <li><a href="#">견적 상담</a></li>
+                        <li><a href="#">시승 상담 및 신청</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <span>온라인 구매</span>
+            <div class="menu-2nd-con">
+              <div class="menu-1rd">
+                <ul>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">온라인샵</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>온라인샵</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>온라인 견적</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">가격 및 구매안내</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>전차종 가격</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>구매 가이드</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">전시장 안내</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>전시장 찾기</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>전시처 조회</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">온라인 신청</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>견적 상담 신청</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>시승 상담 신청</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>카탈로그 신청</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">악세서리 & 부품</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>쉐보레 악세서리</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>부품 정보</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-2rd">
+              </div>
+              <div class="menu-3rd">
+                <ul>
+                  <li class="menu-3rd-2">
+                    <div class="btn-list">
+                      <ul>
+                        <li>
+                          <img
+                            src="https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/primary-nav-icons/shopping-img01.jpg?imwidth=931"
+                            alt="">
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+          <li><span>쉐보레 컴플리티드 케어</span>
+            <div class="menu-2nd-con">
+              <div class="menu-1rd">
+                <ul>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">정비 예약</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>정비 예약 안내</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>서비스 센터 찾기</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>언포테인먼트 전문점 찾기</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>인터넷 정비 예약 신청</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">고객 지원</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>1:1 상담신청</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>FAQ</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>등대 서비스</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>내비게이션 업데이트</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">리콜 안내</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>리콜 안내</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">차량 관리 서비스</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>차량별 보증기간</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>차량 취급 설명서</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>긴급 조치 가이드</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>부품자기 인증제</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">쉐보레 컴플리트 케어</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>서비스 바로가기</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>쉐보레 플러스 케어</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>쉐보레 컴플리트케어 상세</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-2rd">
+              </div>
+              <div class="menu-3rd">
+                <ul>
+                  <li class="menu-3rd-2">
+                    <div class="btn-list">
+                      <ul>
+                        <li>
+                          <img
+                            src="https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/primary-nav-icons/servicemaintenance-img01.jpg?imwidth=931"
+                            alt="">
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><span>구매정보</span>
+            <div class="menu-2nd-con">
+              <div class="menu-1rd">
+                <ul>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">구매 정보</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>차종별 구매혜택</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>구매혜택 FAQ</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="menu-2rd">
+              </div>
+              <div class="menu-3rd">
+                <ul>
+                  <li class="menu-3rd-2">
+                    <div class="btn-list">
+                      <ul>
+                        <li>
+                          <img
+                            src="https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/primary-nav-icons/offers-img01.jpg?imwidth=765"
+                            alt="">
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><span>쉐보레 NOW</span>
+            <div class="menu-2nd-con">
+              <div class="menu-1rd">
+                <ul>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">이벤트</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>진행중인 이벤트</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>지난 이벤트</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>당첨자 발표</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-1rd__list-1">
+                    <a href="#">EV LIFE</a>
+                    <ul class="other-list">
+                      <li>
+                        <div class="text-box-btn">
+                          <p>구매별 절차</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>충전 안내</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>EV 절감 효과</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>스페셜 케어</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="text-box-btn">
+                          <p>FAQ</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="menu-2rd">
+              </div>
+              <div class="menu-3rd">
+                <ul>
+                  <li class="menu-3rd-2">
+                    <div class="btn-list">
+                      <ul>
+                        <li>
+                          <img
+                            src="https://www.chevrolet.co.kr/content/dam/chevrolet/as/kr/ko/primary-nav-icons/now-img01.jpg?imwidth=931"
+                            alt="">
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="top-icons">
+        <div class="shearch-on">
+          <a href="#">
+            <img src="검색.png" alt="검색" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="로그인.png" alt="로그인" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <section class="banner-1">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="배너1 1.png" alt="배너2" />
+          <div>
+            <h1>
+              2024
+              <br />
+              TRAX CROSSOVER
+            </h1>
+            <p class="top-banner-txt">
+              당신의 라이프에 트렌드를 더해줄
+              <br />
+              트랙스 크로스오버
+            </p>
+            <ul>
+              <li>
+                <div class="top-banner-btn-1">
+                  <a href="#">
+                    <span>온라인 견적 및 시승</span>
+                  </a>
+                </div>
+                <div class="top-banner-btn-2">
+                  <a href="#">
+                    <span>자세히 보기</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="쉐보레-베너2 1.png" alt="배너1" />
+          <div>
+            <h1>
+              2022
+              <br />
+              NEW COLORADO
+            </h1>
+            <p class="top-banner-txt">
+              REAL NEW COLORADO,
+              <br />
+              멈춤 없는 모험의 시작
+            </p>
+            <ul>
+              <li>
+                <div class="top-banner-btn-1">
+                  <a href="#">
+                    <span>온라인 견적 및 시승</span>
+                  </a>
+                </div>
+                <div class="top-banner-btn-2">
+                  <a href="#">
+                    <span>자세히 보기</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="배너3.png" alt="배너3" />
+          <div>
+            <h1>
+              2023
+              <br />
+              TRAILBLAZER
+            </h1>
+            <p class="top-banner-txt">
+              THE IMPACT SUV, TRAILBLAZER
+              <br />
+              첫눈에 빠져드는 임팩트
+            </p>
+            <ul>
+              <li>
+                <div class="top-banner-btn-1">
+                  <a href="#">
+                    <span>온라인 견적 및 시승</span>
+                  </a>
+                </div>
+                <div class="top-banner-btn-2">
+                  <a href="#">
+                    <span>자세히 보기</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <img src="topbanner-arrow-r.svg" alt="next" />
+      </div>
+      <div class="swiper-button-prev">
+        <img src="topbanner-arrow-l.svg" alt="prev" />
+      </div>
+    </div>
+  </section>
+
+  <section class="icon-line">
+    <div>
+      <a href="#">
+        <p class="icon-line__img">
+          <img src="매장찾기.svg" alt="매장찾기" />
+        </p>
+        <p class="icon-line__txt-1">전시장 찾기</p>
+        <p class="icon-line__txt-2">바로가기</p>
+        <p class="icon-line__box"></p>
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <p class="icon-line__img"><img src="수리.svg" alt="서비스 센터" /></p>
+        <p class="icon-line__txt-1">서비스 센터 찾기 | 예약</p>
+        <p class="icon-line__txt-2">바로가기</p>
+        <p class="icon-line__box"></p>
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <p class="icon-line__img"><img src="가격_카탈.svg" alt="가격표" /></p>
+        <p class="icon-line__txt-1">카탈로그 | 가격표 다운</p>
+        <p class="icon-line__txt-2">바로가기</p>
+        <p class="icon-line__box"></p>
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <p class="icon-line__img"><img src="선물.svg" alt="이벤트" /></p>
+        <p class="icon-line__txt-1">이벤트 | 할인</p>
+        <p class="icon-line__txt-2">바로가기</p>
+        <p class="icon-line__box"></p>
+      </a>
+    </div>
+  </section>
+
+  <section class="list-1">
+    <div>
+      <h1>Best Top 3</h1>
+      <button class="btn-1st btn-click"><span>구매순</span></button>
+      <button class="btn-2nd"><span>신상순</span></button>
+      <button class="btn-3rd"><span>연비순</span></button>
+    </div>
+
+    <ul class="best-selling">
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 1</span></li>
+          <li class="list-1__name-2"><span>THE NEW SPARK</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-2.png" alt="best-selling-2" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+              <button class="color-btn-4"></button>
+              <button class="color-btn-5"></button>
+              <button class="color-btn-6"></button>
+              <button class="color-btn-7"></button>
+              <button class="color-btn-8"></button>
+            </p>
+            <p>경형 해치백 2022</p>
+            <p>15.0 km/l</p>
+            <p>1.0 ECOTEC</p>
+            <p>75hp</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 9,770,000~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 2</span></li>
+          <li class="list-1__name-2"><span>BOLT EV</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-1.png" alt="best-selling-1" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>배터리 용량</p>
+            <p>1회 주행거리</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+            </p>
+            <p>소형 해치백 2023</p>
+            <p>66kWh</p>
+            <p>414km</p>
+            <p>150kW(204PS)</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 44,300,000 ~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 3</span></li>
+          <li class="list-1__name-2"><span>THE NEW MALIBU</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-3.png" alt="best-selling-3" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-7"></button>
+              <button class="color-btn-8"></button>
+            </p>
+            <p>중형 세단 2022</p>
+            <p>복합 10.5~14.2km/ℓ</p>
+            <p>I3, l4 싱글터보</p>
+            <p>156~253hp</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 28,950,000~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="best-new">
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 1</span></li>
+          <li class="list-1__name-2"><span>TRAX CROSSOVER</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="newcar1.png" alt="best-selling-1" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+              <button class="color-btn-6"></button>
+              <button class="color-btn-9"></button>
+              <button class="color-btn-8"></button>
+            </p>
+            <p>소형 SUV2024</p>
+            <p>복합 12~12.7km/ℓ</p>
+            <p>139hp 엔진</p>
+            <p>150kW(204PS)</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 20,520,000~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 2</span></li>
+          <li class="list-1__name-2"><span>BOLT EV</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-1.png" alt="best-selling-1" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>배터리 용량</p>
+            <p>1회 주행거리</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+            </p>
+            <p>소형 해치백 2023</p>
+            <p>66kWh</p>
+            <p>414km</p>
+            <p>150kW(204PS)</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 44,300,000 ~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 3</span></li>
+          <li class="list-1__name-2"><span>TRAILBLAZER</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="newcar3.png" alt="best-selling-3" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+              <button class="color-btn-5"></button>
+              <button class="color-btn-6"></button>
+            </p>
+            <p>소형 SUV2023</p>
+            <p>복합 11.6~12.9km/ℓ</p>
+            <p>I3 싱글터보</p>
+            <p>156hp 엔진</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 25,710,000 ~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="best-fuel-efficient">
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 1</span></li>
+          <li class="list-1__name-2"><span>BOLT EV</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-1.png" alt="best-selling-1" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>배터리 용량</p>
+            <p>1회 주행거리</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+            </p>
+            <p>소형 해치백 2023</p>
+            <p>66kWh</p>
+            <p>414km</p>
+            <p>150kW(204PS)</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 44,300,000 ~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 2</span></li>
+          <li class="list-1__name-2"><span>THE NEW SPARK</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-2.png" alt="best-selling-2" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-3"></button>
+              <button class="color-btn-4"></button>
+              <button class="color-btn-5"></button>
+              <button class="color-btn-6"></button>
+              <button class="color-btn-7"></button>
+              <button class="color-btn-8"></button>
+            </p>
+            <p>경형 해치백 2022</p>
+            <p>15.0 km/l</p>
+            <p>1.0 ECOTEC</p>
+            <p>75hp</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 9,770,000~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-1__name">
+          <li class="list-1__name-1"><span>top 3</span></li>
+          <li class="list-1__name-2"><span>THE NEW MALIBU</span></li>
+        </ul>
+
+        <div class="list-1__img">
+          <img src="best1-3.png" alt="best-selling-3" />
+        </div>
+
+        <ul class="list-1__detail">
+          <li class="detail-title">
+            <p>EXTERIOR</p>
+            <p>출시일</p>
+            <p>연비</p>
+            <p>엔진</p>
+            <p>최대출력</p>
+          </li>
+          <li class="detail-txt">
+            <p>
+              <button class="color-btn-1 btn-border"></button>
+              <button class="color-btn-2"></button>
+              <button class="color-btn-7"></button>
+              <button class="color-btn-8"></button>
+            </p>
+            <p>중형 세단 2022</p>
+            <p>복합 10.5~14.2km/ℓ</p>
+            <p>I3, l4 싱글터보</p>
+            <p>156~253hp</p>
+          </li>
+        </ul>
+
+        <ul class="list-1__bottom">
+          <li class="list-1__price-con">
+            <span>가격</span>
+            <span class="list-1__price-txt">￦ 28,950,000~</span>
+          </li>
+          <li class="list-1__bottom__btn">
+            <a href="#">
+              <button class="list-1__bottom__btn-1">자세히 보기</button>
+            </a>
+            <a href="#">
+              <button class="list-1__bottom__btn-2">견적 내기</button>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="event-banner">
+    <h1>Chevrolet News</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="event-banner-con">
+            <ul>
+              <li class="event-banner-logo">
+                <img src="쉐보레로고.svg" alt="로고" />
+              </li>
+              <li>
+                <p>
+                  2023 BOLT EV출시 기념
+                  <br />현장전시 & 시승이벤트
+                </p>
+              </li>
+              <li class="event-banner-btn">
+                <div>
+                  <a href="#"><span>현장 전시</span></a>
+                </div>
+                <div>
+                  <a href="#"><span>시승 이벤트</span></a>
+                </div>
+              </li>
+            </ul>
+            <img src="이벤트-1.png" alt="event-1" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="event-banner-con">
+            <ul>
+              <li class="event-banner-logo">
+                <img src="쉐보레로고.svg" alt="로고" />
+              </li>
+              <li>
+                <p>
+                  About THE HOUSE OF GM
+                  <br />전시안내 & 프로그램
+                </p>
+              </li>
+
+              <li class="event-banner-btn">
+                <div>
+                  <a href="#"><span>전시 안내</span></a>
+                </div>
+                <div>
+                  <a href="#"><span>프로그램 예약</span></a>
+                </div>
+              </li>
+            </ul>
+            <img src="이벤트-2.png" alt="event-2" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <img src="event-arrow-r.svg" alt="next" />
+      </div>
+      <div class="swiper-button-prev">
+        <img src="event-arrow-l.svg" alt="prev" />
+      </div>
+
+      <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="쉐보레로고.svg" alt="logo" />
+    </div>
+    <ul class="footer-first">
+      <li>
+        <p>
+          <a href="#">차량</a>
+        </p>
+        <p>
+          <a href="#">온라인 구매</a>
+        </p>
+        <p>
+          <a href="#">마이 쉐보레</a>
+        </p>
+        <p>
+          <a href="#">쉐보레 컴플리트 케어</a>
+        </p>
+        <p>
+          <a href="#">쉐보레 나우</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="#">이용약관</a>
+        </p>
+        <p>
+          <a href="#">개인정보처리방침</a>
+        </p>
+        <p>
+          <a href="#">사이트맵</a>
+        </p>
+        <p>
+          <a href="#">GM Korea</a>
+        </p>
+        <p>고객상담전화 080-3000-5000</p>
+      </li>
+      <li class="footer-first-3">
+        <p>FOLLOW CHEVROLET</p>
+        <div>
+          <a href="#">
+            <img src="페이스북.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="인스타.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="유튜브.svg" alt="" />
+          </a>
+        </div>
+      </li>
+    </ul>
+    <div class="footer-last">
+      <ul>
+        <li>
+          <p>
+            사업자 : 한국지엠주식회사 | 대표 : 로베르토 렘펠 | 사업자등록번호
+            : 122-81-74534
+            <br />
+            주소 : 21334 인천광역시 부평구 부평대로 233 | 통신판매업신고 :
+            2016-인천부평-0902
+            <br />
+            © GM KOREA. ALL RIGHTS RESERVED
+          </p>
+        </li>
+        <li class="last-txt">
+          <p>FIND NEW ROAD</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
